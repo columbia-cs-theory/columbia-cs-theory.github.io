@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+    
+<!--HEAD-->
+<head>
+
+    <title>CS Theory at Columbia</title>
+    
+    <!--open links in new tab-->
+    <base target="_blank">
+
+    <!--JS-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>	
+    <script src="js/cal.js"></script>	
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="bootstrap.min.css">	
+    <link rel="stylesheet" href="style.css"> 
+    
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web|Roboto+Slab&display=swap" rel="stylesheet">
+    
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<!--BODY-->
+<body>
+    
+    <h1 class="title">Theory of Computation at <a href="http://www.columbia.edu">Columbia</a></h1>
+
+    <div id="left">
+        
+        <div id="welcome-blurb">
+		
+		<p> The Theory of Computation group is a part of the <a href="https://www.cs.columbia.edu/">Department of Computer Science</a> 
+			in the <a href="https://engineering.columbia.edu/">Columbia School of Engineering and Applied Sciences</a>. 
+		</p>
+		
+		<p> We research the fundamental capabilities and limitations of efficient computation. In addition, 
+			we use computation as a lens to gain deeper insights into problems from the natural, 
+			social, and engineering sciences. Our active research areas include algorithmic 
+			game theory, complexity theory, cryptography, the design and analysis of algorithms, 
+			interactive computation and communication, theoretical neuroscience, property testing, 
+			the role of randomness in computation, sublinear and streaming algorithms, and the 
+			theoretical foundations of machine learning.
+		</p>
+		
+		<p> Our group is highly collaborative, both within Columbia and among peer institutions. 
+			We have a weekly <a href="http://www.cs.columbia.edu/theory/theory-seminar.html">Theory Lunch</a> and a bi-weekly <a href="https://claytonsanford.com/theory-student-seminar">Student Seminar</a>. Most graduate students 
+			have (at least) two advisors and collaborate with several professors and other students.  
+			Some of our faculty are cross-listed with the <a href="https://ieor.columbia.edu/">IEOR department</a> and the 
+			<a href="https://datascience.columbia.edu/">Data Science Institute</a>. We interact with the New York theory community at 
+			large through <a href="http://www.sci.brooklyn.cuny.edu/~zachos/nycac_2019/">NYCAC</a>, <a href="http://www.cs.columbia.edu/theory/thday.htm">NYC Theory Day</a>, 
+			<a href="https://nycryptoday.wordpress.com/">NYC Crypto Day</a>, and the <a href="https://www.simonsfoundation.org/mathematics-physical-sciences/algorithms-and-geometry/">Simons 
+            Collaboration on Algorithms and Geometry</a>. 
+		</p>
+		
+		<p> Our department and research group are growing, and we’re always looking for new members 
+			and collaborators. If you would like to join our group as a graduate student, please apply 
+			to the <a href="http://www.cs.columbia.edu/education/phd/" 
+                	target="_blank">PhD program in Computer Science</a> at Columbia. Please reach out to faculty directly for 
+			inquiries about postdoc positions. 
+		</p>
+
+        </div>
+        
+        <div id="people">
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Faculty')" id="default"><h2>Faculty</h2></button>
+                <button class="tablinks" onclick="openTab(event, 'Postdocs')"><h2>Postdocs</h2></button>
+                <button class="tablinks" onclick="openTab(event, 'Students')" id="default"><h2>Students</h2></button>
+                <button class="tablinks" onclick="openTab(event, 'Visitors')"><h2>Visitors</h2></button>
+            </div>
+
+            <!-- Faculty -->
+            <div id="Faculty" class="tabcontent">
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/headshots/alex.png">
+                        <div class="img-name"><a href="http://www.cs.columbia.edu/~andoni/">Alexandr Andoni</a></div>
+                        <div class="img-interests">Sublinear Algorithms, High-dimensional Geometry, 
+                            Theoretical Machine Learning</div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/headshots/xi.jpeg">
+                        <div class="img-name"><a href="http://www.cs.columbia.edu/~xichen/Homepage/Welcome.html">Xi Chen</a></div>
+                        <div class="img-interests">Algorithmic Game Theory, Complexity Theory</div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/headshots/daniel.png">
+                        <div class="img-name"><a href="http://www.cs.columbia.edu/~djhsu">Daniel Hsu</a></div>
+                        <div class="img-interests">Algorithmic Statistics, Machine Learning, Privacy</div>
+                    </div>
+
+                </div>
+
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/headshots/tal.jpg">
+                        <div class="img-name"><a href="http://www.cs.columbia.edu/~tal">Tal Malkin</a></div>
+                        <div class="img-interests">Computational Complexity, Cryptography</div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/headshots/christos.jpg">
+                        <div class="img-name"><a href="https://engineering.columbia.edu/faculty/christos-papadimitriou">Christos Papadimitriou</a></div>
+                        <div class="img-interests">Algorithmic Game Theory, Algorithms, Complexity Theory, Neuroscience</div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/headshots/tim-roughgarden.jpg">
+                        <div class="img-name"><a href="http://timroughgarden.org/">Tim Roughgarden</a></div>
+                        <div class="img-interests">Algorithmic Game Theory, Algorithms, Cryptocurrencies, Microeconomics</div>
+                    </div>
+
+                </div>
+
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/headshots/rocco.jpg">
+                        <div class="img-name"><a href="http://www.cs.columbia.edu/~rocco">Rocco Servedio</a></div>
+                        <div class="img-interests">Computational Complexity, Learning Theory, Randomness in Computation</div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/headshots/cliff.png">
+                        <div class="img-name"><a href="http://www.columbia.edu/~cs2035/">Cliff Stein</a></div>
+                        <div class="img-interests">Algorithms, Combinatorial Optimization, Network Algorithms, Scheduling</div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/headshots/omri.png">
+                        <div class="img-name"><a href="http://www.cs.columbia.edu/~omri">Omri Weinstein</a></div>
+                        <div class="img-interests">Information Theory, Communication Complexity, Data-Structure Lower Bounds</div>
+                    </div>
+
+                </div>
+
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/headshots/mihalis.jpeg">
+                        <div class="img-name"><a href="http://www.cs.columbia.edu/~mihalis">Mihalis Yannakakis</a></div>
+                        <div class="img-interests">Algorithms, Complexity Theory, Combinatorial Optimization, Databases, Testing and Verification</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Postdocs -->
+            <div id="Postdocs" class="tabcontent">
+                <div class="imgs-row">
+                
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Jaroslaw Blasiok</div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Arnold Filtser</div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Kira Goldner</div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                </div>
+
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Chin Ho Lee</div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Students -->
+            <div id="Students" class="tabcontent">
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Marshall Ball</div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">William Brown</div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Shunhua Jiang</div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                </div>
+
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Yaonan Jin</div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Chengyu Lin</div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Dan Mitropolsky</div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                </div>
+
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Shivam Nadimpalli</div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Eric Neyman</div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Binghui Peng</div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                </div>
+
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Gleb Posobin</div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Tim Randolph</div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Negev Shekel-Nosatzki</div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                </div>
+
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Sandip Sinha</div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Emmanouil Vlatakis</div>
+                        <div class="img-interests"></div>
+                    </div>
+			
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Kiran Vodrahalli</div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                </div>
+
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Erik Waingarten</div>
+                        <div class="img-interests"></div>
+                    </div>
+			
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Kevin Yeo</div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Hengjie Zhang</div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                </div>
+
+                <div class="imgs-row">
+
+                    <div class="img-container">
+                        <img src="images/parachute.jpg">
+                        <div class="img-name">Peilin Zhong</div>
+                        <div class="img-interests"></div>
+                    </div>
+
+                </div>
+
+            </div>
+            
+            <!-- Visitors -->            
+            <div id="Visitors" class="tabcontent">
+                <div class="imgs-row">
+                
+                <div class="img-container">
+                    <img src="images/parachute.jpg">
+                    <div class="img-name">Zvi Galil</div>
+                    <div class="img-interests"></div>
+                </div>
+                
+                <div class="img-container">
+                    <img src="images/parachute.jpg">
+                    <div class="img-name">Oded Goldreich</div>
+                    <div class="img-interests"></div>
+                </div>
+                
+                <div class="img-container">
+                    <img src="images/parachute.jpg">
+                    <div class="img-name">Dana Ron</div>
+                    <div class="img-interests"></div>
+                </div>
+            
+            </div>
+            
+            <div class="imgs-row">
+                
+                <div class="img-container">
+                    <img src="images/parachute.jpg">
+                    <div class="img-name">Eran Tromer</div>
+                    <div class="img-interests"></div>
+                </div>
+                
+            </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+
+    <div id="right">
+        
+        <!-- JS calendar -->
+        <!--div class="row mt-3">
+        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12"-->
+        <div> <div>
+               <h2 style="display: inline">Calendar</h2> &nbsp;
+                  <span class="align-text-top">
+
+                             [ <a id="earlierEvents" role="link" class="activelink" href="#" onclick="earlierEvents()" target="_self">earlier</a> |
+                             <a id="laterEvents" role="link" class="activelink" href="#" onclick="laterEvents()" target="_self">later</a> ]
+
+                             &nbsp; [ <a class="" href="https://calendar.google.com/calendar/embed?src=columbia.edu_1hi1cc2hrft41m6m9km8ib1ktc%40group.calendar.google.com&ctz=America%2FNew_York">google calendar</a> ]</span>
+                 <div class="row mt-3 pl-4 mb-4">
+                    <div id="sched">
+                      <div class="panel-group" id="accordionCal">
+                      </div>
+                    </div>
+                 </div>
+        </div>
+        </div>
+        
+        <br>
+        
+        
+        <h2>Recurring Events</h2>
+            <ul>
+                <li><a href="http://www.cs.columbia.edu/theory/theory-seminar.html">Theory Lunch</a></li>
+                <li><a href="https://claytonsanford.com/theory-student-seminar">Student Learning Seminar</a></li>
+                <li><a href="http://sdimp.github.io/bool-f19">Boolean Analysis Reading Group</a></li>
+		<li><a href="https://nycryptoday.wordpress.com/">NYC Crypto Day</a> and <a href="http://www.cs.columbia.edu/theory/thday.htm">NYC Theory Day</a></li>
+            </ul>
+
+        <h2>Our Friends</h2>
+            <ul>
+                <li>Columbia's <a href="https://datascience.columbia.edu/">Data Science Institute</a></li>
+                <li><a href="https://ieor.columbia.edu/">IEOR</a> and <a href="http://stat.columbia.edu/">Statistics</a>  at Columbia</li>
+                <li><a href="https://www.math.ias.edu/seminars/">IAS School of Mathematics</a></li>
+                <li><a href="http://www.sci.brooklyn.cuny.edu/~zachos/nycac_2019/">NYCAC 2019</a></li>
+                <li><a href="http://dimacs.rutgers.edu/">Rutgers DIMACS</a></li>
+                <li><a href="https://www.simonsfoundation.org/mathematics-physical-sciences/algorithms-and-geometry/">Simons Algorithms and Geometry Collaboration</a></li>
+		<li>Columbia's <a href="http://statisticalml.stat.columbia.edu/">Year on Statistical ML</a></li>
+	    </ul>
+        
+        <h2>Recent Courses</h2>
+            <ul>
+                <li>COMS 4231: Algorithms I (S20)</li>
+                <li>COMS 4232: Advanced Algorithms (S20)</li>
+                <li>COMS 4995: Incentives in Computer Science (S20)</li>
+                <li>COMS 6261: Information-Theoretic Cryptography (S20)</li>
+                <li>COMS 3261: Computer Science Theory (S20)</li>
+		<li>COMS 6995: Computation and the Brain (F19)</li>
+                <li>COMS 4231: Introduction to Cryptography (F19)</li>
+                <li>COMS 4236: Introduction to Computational Complexity (F19)</li>
+                <li>COMS 4995: Randomized Algorithms (F19)</li>
+            </ul>
+
+        
+        <h2>Recent Alumni <span style="font-size: 14px;">(PhDs and Postdocs)</span></h2>
+            <ul>
+                <li><a href="http://www.cs.columbia.edu/~kshi/">Kevin Shi</a></li>
+                <li><a href="http://www.cs.columbia.edu/~tim/">Timothy Sun</a></li>
+                <li><a href="https://www.cs.columbia.edu/~ghada/">Ghada Almashaqbeh</a></li>
+                <li><a href="http://www.cs.columbia.edu/~luke/">Lucas Kowalczyk</a></li>
+                <li><a href="https://www.normalesup.org/~fbenhamo/">Fabrice Benhamouda</a></li>
+                <li><a href="http://www.mit.edu/~mahabadi/">Sepideh Mahabadi</a></li>
+                <li><a href="https://ilyaraz.org/">Ilya Razenshteyn</a></li>
+                <li><a href="https://cs.nyu.edu/~golovnev/">Alexander Golovnev</a></li>
+                <li><a href="https://scholar.google.com/citations?user=aS2nvbsAAAAJ&hl=en">Jinyu Xie</a></li>
+                <li><a href="http://www.cs.columbia.edu/~stuartah/">Stuart Hadfield</a></li>
+                <li><a href="http://www.cs.columbia.edu/~ccanonne/">Cl&eacute;ment Canonne</a></li>
+                <li><a href="http://www.cs.columbia.edu/~xiaoruisun">Xiaorui Sun</a></li>
+                <li><a href="http://www.cs.columbia.edu/~paparas/">Dimitris Paparas</a></li>
+                <li><a href="http://www.ccs.neu.edu/home/jullman/">Jon Ullman</a></li>
+                <li><a href="http://www.cs.columbia.edu/~fernando">Fernando Krell</a></li>
+                <li><a href="https://www.dcs.warwick.ac.uk/~igorcarb/">Igor Carboni Oliveira</a></li>
+                <li><a href="http://theory.stanford.edu/~liyang/">Li-Yang Tan</a></li>
+                <li><a href="http://www.cs.princeton.edu/~ipetras/">Iasonas Petras</a></li>
+                <li><a href="http://www.ece.umd.edu/~danadach/">Dana Dachman-Soled</a></li>
+                <li><a href="https://marianapr.github.io/">Mariana Raykova</a></li>
+                <li><a href="https://www.usna.edu/Users/cs/choi/">Seung Geol Choi</a></li>
+                <li><a href="https://cs.gmu.edu/~gordon/">Dov Gordon</a></li>
+                <li><a href="http://www.cs.columbia.edu/~evahlis">Yevgeniy Vahlis</a></li>
+                <li><a href="https://dblp.org/pers/hd/a/Antonakopoulos:Spyridon">Spyridon Antonakopoulos</a></li>
+                <li><a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a></li>
+                <li><a href="http://www.cs.columbia.edu/~rjaiswal">Ragesh Jaiswal</a></li>
+                <li><a href="http://www.ccs.neu.edu/home/viola/">Emanuele Viola</a></li>
+                <li><a href="http://www.cs.columbia.edu/~homin">Homin K. Lee</a></li>
+	        <li><a href="http://www.cs.columbia.edu/~atw12/">Andrew Wan</a></li>
+                <li><a href="https://www.di.ens.fr/~wee/">Hoeteck Wee</a></li>
+            </ul>
+    </div>
+    
+</body>
+    
+<script>
+    function openTab(evt, tabName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="default" and click on it
+    document.getElementById("default").click();
+    
+    // Calendar
+    $(document).ready(function() {
+		$.getScript('//apis.google.com/js/client.js?onload=handleClientLoad');
+		pushEventTable();
+    });
+
+</script>
+    
+</html>
