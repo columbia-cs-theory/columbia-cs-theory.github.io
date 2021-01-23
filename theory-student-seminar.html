@@ -16,7 +16,7 @@
 	<!-- Site Title -->
 	<title>Columbia CS Theory Student Seminar</title>
 
- 	<link rel="stylesheet" href="style.css"> 
+ 	<link rel="stylesheet" href="seminar-style.css"> 
     
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Istok+Web|Roboto+Slab&display=swap" rel="stylesheet">
@@ -29,176 +29,180 @@
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Script -->
+	<script type="text/javascript">
+	<!--
+	    function toggle_visibility(id) {
+	       var e = document.getElementById(id);
+	       if(e.style.display == 'block')
+	          e.style.display = 'none';
+	       else
+	          e.style.display = 'block';
+	    }
+	//-->
+	</script>
 </head>
+
+
 <body>
-	<h1>Columbia CS Theory Student Seminar</h1>
+	<h1>CU Theory Student Seminar</h1>
+
 	<p>
-		Starting fall 2019, this group is a setting for Columbia PhD students and postdocs in the <a href="index.html">CS Theory group</a>  to learn from each other by presenting papers, sharing research problems, and studying CS topics together. This is technically a combination of two events which occur on alternate weeks:
-		<ul>
-			<li>A <b>seminar</b>, in which students present research ideas, explain their current work, and give practice talks.</li>
-			<li>A <b>reading group</b>, in which we read papers and learn about areas of TCS as a group.</li>
-		</ul>
-		We meet at <b>5pm in CSB 488</b> and communicate primarily on the theory-student-seminar channel of the Columbia CS PhD Students Slack. Please contact <a href="https://claytonsanford.com">Clayton</a> if you have any questions about the seminar. We have food!
+		This group is a setting for PhD students and postdocs in the <a href="index.html">theory group</a> at Columbia to get together once a week to socialize and learn from each other. Our meetings are a mix of research and paper presentations, practice talks, and open problem sessions. We communicate primarily on the <tt>#theory-student-seminar</tt> channel of the Columbia CS PhD Students Slack. Feel free to reach out to <a href="https://claytonsanford.com">Clayton</a> or <a href="http://cs.columbia.edu/~nadimpalli">Shivam</a> if you'd like to give a talk, join the mailing list, or have any questions! 
 	</p>
 
-	<h2>Spring 2020</h2>
-	<h3>Reading Group: Pseudorandomness</h3>
-	<p>
-		We're covering topics in pseudorandomess. We draw heavily from <a href="https://people.seas.harvard.edu/~salil/pseudorandomness/pseudorandomness-published-Dec12.pdf">Salil Vadhan's book</a> and <a href="https://courses.cs.cornell.edu/cs6815/2019fa/">Eshan Chattopadhyay's course</a>.
-	</p>
-	<table style="border-collapse: separate; border-spacing: 10px 0;">
+	<h3>Spring 2021</h3>
+	<div>
+	<p>This semester, we're meeting at <b>5:30pm NYC time</b> every Monday over Zoom.</p>
+
+	<table>
 		<tr>
-			<th>Date</th>
-			<th>Topic/Reading Material</th>
-			<th>Presenter</th>
-			<th>Notes</th>
+			<th>when</th>
+			<th>topic</th>
+			<th>presenter</th>
+			<th>notes</th>
 		</tr>
 		<tr>
-			<td>February 6, 2020</td>
+			<td>1/25</td>
+			<td>Sorting with Partial Information</td>
+			<td>Shivam</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>2/1</td>
+			<td>TBD</td>
+			<td>Clayton</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>2/8</td>
+			<td>PPP, PPAD, and Friends</td>
+			<td>Miranda</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>2/15</td>
+			<td>TBD</td>
+			<td>Tim</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>2/22</td>
+			<td>TBD</td>
+			<td>Sandip</td>
+			<td></td>
+		</tr>
+
+	</table>
+	</div>
+
+
+	<h3><a href="#" onclick="toggle_visibility('s20');">
+	Spring 2020</a></h3>
+
+	<div id='s20' style="display:none">
+	<p>We're meeting every Monday from 5pm to 6pm in CSB 488 (and will have food)!</p>
+
+	<table>
+		<tr>
+			<th>when</th>
+			<th>topic</th>
+			<th>presenter</th>
+			<th>notes</th>
+		</tr>
+		<tr>
+			<td>1/30</td>
+			<td>Dynamic Optimality and Binary Search Trees–I</td>
+			<td>Victor</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>6/20</td>
 			<td>Intro to Pseudorandomness</td>
-			<td>Sandip Sinha</td>
+			<td>Sandip</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>February 20, 2020</td>
+			<td>2/13</td>
+			<td>Dynamic Optimality and Binary Search Trees–II</td>
+			<td>Victor</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>2/20</td>
 			<td>Expanders and Spectral Graph Theory</td>
-			<td>Dan Mitropolski</td>
+			<td>Dan</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>March 12, 2020</td>
-			<td>TBD</td>
-			<td>Kiran Vodrahalli</td>
-			<td></td>
+			<td>2/27</td>
+			<td>Local Decodability of the Burrows-Wheeler Transform</td>
+			<td>Sandip</td>
+			<td><a href="https://arxiv.org/abs/1808.03978">paper</a></td>
 		</tr>
 		<tr>
-			<td>April 2, 2020</td>
-			<td>TBD</td>
-			<td>Clayton Sanford</td>
+			<td><mark>3/5 11:30am</mark></td>
+			<td>Lightning Talks and Q&A for prospective PhD students</td>
 			<td></td>
-		</tr>
-		<tr>
-			<td>April 16, 2020</td>
-			<td>TBD</td>
-			<td>Victor Lecomte</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>April 30, 2020</td>
-			<td>TBD</td>
-			<td>TBD</td>
 			<td></td>
 		</tr>
 	</table>
+	</div>
 
-	<h3>Seminar</h3>
-	<table style="border-collapse: separate; border-spacing: 10px 0;">
-		<tr>
-			<th>Date</th>
-			<th>Topic</th>
-			<th>Presenter</th>
-			<th>Notes</th>
-		</tr>
-		<tr>
-			<td>January 30, 2020</td>
-			<td>Dynamic Optimality and Binary Search Trees, Part I</td>
-			<td>Victor Lecomte</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>February 13, 2020</td>
-			<td>Dynamic Optimality and Binary Search Trees, Part II</td>
-			<td>Victor Lecomte</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>February 27, 2020</td>
-			<td><a href="https://arxiv.org/abs/1808.03978">Local Decodability of the Burrows-Wheeler Transform
-</a></td>
-			<td>Sandip Sinha</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>March 5, 2020</td>
-			<td>Lightning Talks and Q&A for New Student Visit Day</td>
-			<td>TBD</td>
-			<td>Abnormal Date and Time; 11:30am - 12:30pm</td>
-		</tr>
-		<tr>
-			<td>March 26, 2020</td>
-			<td>TBD</td>
-			<td>Arnold Filtser</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>April 9, 2020</td>
-			<td>TBD</td>
-			<td>TBD</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>April 23, 2020</td>
-			<td>TBD</td>
-			<td>TBD</td>
-			<td></td>
-		</tr>
-	</table>
+	<h3><a href="#" onclick="toggle_visibility('f19');">Fall 2019</a></h3>
 
-	<h2>Fall 2019</h2>
-	<h3>Reading Group: The Classics</h3>
+	<div id="f19" style="display:none">
 	<p>
-		For the first semester of the seminar, we read classical papers from various subfields of Theoretical Computer Science.
+		We're reading classical papers from various subfields of TCS. We'll be meeting from 5pm to 6pm in CSB 488. 
 	</p>
-	<table style="border-collapse: separate; border-spacing: 10px 0;">
+
+	<table>
 		<tr>
-			<th>Date</th>
-			<th>Reading Material</th>
-			<th>Presenter</th>
-			<th>Notes</th>
+			<th>when</th>
+			<th>topic</th>
+			<th>presenter</th>
+			<th>notes</th>
 		</tr>
 		<tr>
-			<td>September 19, 2019</td>
-			<td>Alan Turing: <a href="https://www.csee.umbc.edu/courses/471/papers/turing.pdf">Computing Machinery and Intelligence</a> (1950)</td>
-			<td>Victor Lecomte</td>
+			<td>9/19</td>
+			<td><a href="https://www.csee.umbc.edu/courses/471/papers/turing.pdf">Computing Machinery and Intelligence</a> (Turing, 1950)</td>
+			<td>Victor</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>October 10, 2019</td>
-			<td>Claude Shannon: <a href="http://www.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf">A Mathematical Theory of Communication</a> (1947)</td>
-			<td>Shunhua Jiang</td>
+			<td>10/10</td>
+			<td><a href="http://www.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf">A Mathematical Theory of Communication</a> (Shannon, 1947)</td>
+			<td>Shunhua</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>October 24, 2019</td>
-			<td>Leslie Valiant: <a href="https://www.sciencedirect.com/science/article/pii/0304397579900446">The complexity of computing the permanent
-</a> (1979)</td>
-			<td>Binghui Peng</td>
+			<td>10/24</td>
+			<td><a href="https://www.sciencedirect.com/science/article/pii/0304397579900446">The complexity of computing the permanent
+</a> (Valiant, 1979)</td>
+			<td>Binghui</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>November 7, 2019</td>
-			<td>N. Karmarkar: <a href="https://www.google.com/url?q=https://link.springer.com/article/10.1007/BF02579150&sa=D&ust=1570209552485000&usg=AFQjCNGX6lJya0ykN96dVjYe8Wg2C6-rAQ">A new polynomial-time algorithm for linear programming
-</a> (1984)</td>
-			<td>Sandip Sinha</td>
+			<td>11/7</td>
+			<td><a href="https://www.google.com/url?q=https://link.springer.com/article/10.1007/BF02579150&sa=D&ust=1570209552485000&usg=AFQjCNGX6lJya0ykN96dVjYe8Wg2C6-rAQ">A new polynomial-time algorithm for linear programming
+</a> (Karmarkar, 1984)</td>
+			<td>Sandip</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>November 21, 2019</td>
-			<td>Christos Papadimitriou: <a href="https://www.sciencedirect.com/science/article/pii/0022000085900455">Games against nature</a> (1985)</td>
-			<td>Kiran Vodrahalli</td>
+			<td>11/21</td>
+			<td><a href="https://www.sciencedirect.com/science/article/pii/0022000085900455">Games against nature</a> (Papadimitriou, 1985)</td>
+			<td>Kiran</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>December 5, 2019</td>
-			<td>Goldreich, Goldwasser, Micali: <a href="https://people.csail.mit.edu/silvio/Selected%20Scientific%20Papers/Pseudo%20Randomness/How%20To%20Construct%20Random%20Functions.pdf">How to Construct Random Functions</a> (1986)</td>
-			<td>Chengyu Lin</td>
+			<td>12/5</td>
+			<td><a href="https://people.csail.mit.edu/silvio/Selected%20Scientific%20Papers/Pseudo%20Randomness/How%20To%20Construct%20Random%20Functions.pdf">How to Construct Random Functions</a> (GGM, 1986)</td>
+			<td>Chengyu</td>
 			<td></td>
 		</tr>
-<!-- 		<tr>
-			<td>December 19, 2019</td>
-			<td>Nisan, Wigderson: <a href="http://www.math.ias.edu/~avi/PUBLICATIONS/MYPAPERS/NOAM/HARDNESS/final.pdf">Hardness vs Randomness</a> (1994)</td>
-			<td>Manolis Vlatakis</td>
-			<td>May be cancelled if people have already left campus</td>
-		</tr> -->
+
 	</table>
+	</div>
 </body>
