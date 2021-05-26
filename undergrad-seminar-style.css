@@ -1,11 +1,8 @@
 body {
-    padding: 50px;
-
-    margin-left: 50px;
+    padding: 5%;
+    width: 80%;
+    margin-left: 5%;
     margin-right: auto;
-
-    max-width: 1200px;
-    min-width: 1200px;
     line-height: 1.45em;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
