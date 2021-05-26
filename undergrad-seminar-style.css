@@ -23,6 +23,7 @@ body {
 
 table {
     margin-left: auto;
+    margin-left: 50px;
     margin-right: auto;
     min-width: 80%;
     max-width: 100%;
@@ -86,6 +87,10 @@ hr {
 .sum21-group {
     padding-top: 30px;
     padding-bottom: 5px;
+}
+
+#sum21-NPCompleteness {
+    padding-top: 5px;
 }
 
 
